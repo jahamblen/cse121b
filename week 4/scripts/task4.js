@@ -18,8 +18,12 @@ let profile = {
 profile.PlacesLived = [
     // Step 7: Inside of the empty array above, add a new object with two properties: place and length and values of an empty string
     {
+        place: 'West Palm Beach, FL',
+        length: '7 years'
+    },
+    {
         place: 'Grand Junction, CO',
-        length: '26 years'
+        length: '19 years'
     },
     // Step 8: For each property, add appropriate values as strings
     {
@@ -60,7 +64,6 @@ profile.hobbies.forEach((hobby) => {
 profile.PlacesLived.forEach((placeLived) => {
     let placesLivedPlace = document.createElement('dt');
     placesLivedPlace.textContent = placeLived.place;
-
     let placesLivedLength = document.createElement('dd');
     placesLivedLength.textContent = placeLived.length;
     // Step 9: Append the HTML <dt> and <dd> elements created above to the HTML <dl> element with an ID of places-lived
