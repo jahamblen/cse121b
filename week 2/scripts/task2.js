@@ -3,11 +3,11 @@
 /* VARIABLES */
 
 // Step 1: declare and instantiate a variable to hold your name
-let theNameElement = document.getElementById('name');
+const theNameElement = 'Josh Hamblen';
 
 
 // Step 2: place the value of the name variable into the HTML file (hint: document.querySelector())
-document.querySelector('#name').innerHTML = 'Josh Hamblen';
+document.querySelector('#name').textContent = 'Josh Hamblen';
 
 // Step 3: declare and instantiate a variable to hold the current year
 let currentyear = new Date().getFullYear();
